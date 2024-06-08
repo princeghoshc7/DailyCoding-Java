@@ -9,8 +9,11 @@ public class PreciseFormat {
 		if(b!=0) {
 			
 			float result=a/b;
-			System.out.format("%.7f ", result);
-			System.out.format("%.3f%n", result);
+			System.out.format("%.7f ", result); // This method used to print values till 7 count after decimal
+			System.out.format("%.3f%n", result); // same method use to print values till count 3 
+		}
+		else {
+			System.out.println("Divison not possible if denominator value 0 ");
 		}
 	}
 
